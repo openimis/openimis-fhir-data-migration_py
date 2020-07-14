@@ -25,7 +25,7 @@ This can be found under: Run > Edit Configurations… > Execution (drop-down-men
 
 ### Creation of JSON Files
 * Start the openIMIS backend server
-* Run the data_migration.py script 
+* Run the [data_migration.py](https://github.com/openimis/openimis-fhir-data-migration_py/blob/master/data_migration.py) script 
 
 On the terminal:
 ``` 
@@ -44,7 +44,7 @@ Simply click Run
 > The easiest way is to use pgAdmin, a web application PostgreSQl offers  
 * Create a new database or use an existing one
 * Start the openIMIS backend server
-* Run the data_migration.py script as above
+* Run the [data_migration.py](https://github.com/openimis/openimis-fhir-data-migration_py/blob/master/data_migration.py) script as above
 * Follow the instructions on the console to create the database tables
 
 >To connect to a local database, just press ENTER when the host and port is asked. 
