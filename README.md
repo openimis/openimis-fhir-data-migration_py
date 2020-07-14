@@ -1,5 +1,6 @@
 # openimis-fhir-data-migration_py
 
+
 ##Content
 * [Description](#description)
 * [Configuration Options](#configuration-options)
@@ -22,19 +23,26 @@ Links:
 [openIMIS wiki page](https://openimis.atlassian.net/wiki/spaces/OP/pages/786104344/Installation+and+Country+Localisation) 
 
 ## Configuration Options
+
+
 ###Terminal
 Simply start the database_tool.py script.
+
+
 
 ###PyCharm
 1. Navigate to the Run > Edit Configurations ... window
 2. Check the "Emulate terminal in output console" field                                                                                                                                                                                                                                                                                                                               |
 
+
 ## Example of usage
+
 
 ###Create JSON Files
 1. Start the openIMIS backend server
 2. Run the database_tool.py script
 3. Follow the instructions on the console
+
 
 ###Create Database Tables
 1. Download [PostgreSQL](https://www.postgresql.org/)
