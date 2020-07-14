@@ -1,7 +1,7 @@
 # openimis-fhir-data-migration_py
 
 
-##Content
+## Content
 * [Description](#description)
 * [Configuration Options](#configuration-options)
 * [Example of usage](#example-of-usage)
@@ -11,7 +11,7 @@
 ## Description
 This repository holds the files for the transfer tool from openIMIS to a FHIR database in PostgreSQL as well as a json file creator. 
 
-The module takes the data from [api_fhir_R4](http://localhost:8000/api_fhir_R4/), 
+The module takes the data from [api_fhir_r4](http://localhost:8000/api_fhir_r4/), 
 and allows to create json files and an FHIR database of this data.
 
 To be able to use it, download the openIMIS applications.
@@ -25,12 +25,12 @@ Links:
 ## Configuration Options
 
 
-###Terminal
+### Terminal
 Simply start the database_tool.py script.
 
 
 
-###PyCharm
+### PyCharm
 1. Navigate to the Run > Edit Configurations ... window
 2. Check the "Emulate terminal in output console" field                                                                                                                                                                                                                                                                                                                               |
 
@@ -38,13 +38,13 @@ Simply start the database_tool.py script.
 ## Example of usage
 
 
-###Create JSON Files
+### Create JSON Files
 1. Start the openIMIS backend server
 2. Run the database_tool.py script
 3. Follow the instructions on the console
 
 
-###Create Database Tables
+### Create Database Tables
 1. Download [PostgreSQL](https://www.postgresql.org/)
 2. Create or use the default User 
 3. Create a new Database or use an existing one
