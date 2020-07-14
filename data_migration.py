@@ -16,7 +16,7 @@ user = "spiderman"
 password = "spiderman"
 EOF = -1
 folder_name = 'json_files'
-PATH = 'C:/openIMIS/openIMIS-be/openimis-fhir-data-migration_py' + folder_name
+PATH = 'C:/openIMIS/openIMIS-be/openimis-fhir-data-migration_py/' + folder_name
 INPUT = ["Location", "Patient", "PractitionerRole", "Practitioner", "Claim", "ClaimResponse", "CommunicationRequest",
          "Medication", "Condition", "ActivityDefinition", "HealthcareService"]
 
@@ -64,7 +64,6 @@ def read_json(input):
                 data['entry'].insert(EOF, resources_next_page[i])
 
     return data
-
 
 
 def create_location_table():
@@ -1230,6 +1229,7 @@ if __name__ == '__main__':
                 connection.close()
 
         if number == "2":
+            print("\n----------------------------------------------")
             file = Json()
             if os.path.isdir(PATH):
                 file.remove_and_write_files()
