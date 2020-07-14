@@ -9,7 +9,7 @@ from requests.auth import HTTPBasicAuth
 import os
 import getpass
 
-baseUrl = "http://localhost:8000/api_fhir_R4/"
+baseUrl = "http://localhost:8000/api_fhir_r4/"
 pageOffset = "&page-offset="
 pageCount = "?_count=200"
 user = "spiderman"
