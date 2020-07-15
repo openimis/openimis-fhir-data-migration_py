@@ -127,8 +127,14 @@ def create_patient_table():
                 photo_url VARCHAR(255),
                 telecom_phone VARCHAR(100),
                 telecom_email VARCHAR(100),
+                general_practitioner VARCHAR(255), 
                 address VARCHAR(100),
-                poverty_status VARCHAR(10) );""")
+                extension_poverty_status VARCHAR(10),
+                extension_is_head BOOLEAN,
+                extension_registration_date DATE, 
+                extension_location_code VARCHAR(255),
+                extension_education_code VARCHAR(10),
+                extension_profession_code VARCHAR(10) );""")
 
     cursor.execute(query)
     connection.commit()
@@ -143,8 +149,10 @@ def create_patient_table():
             continue
 
         insert = ("""INSERT INTO Patient (patient_id, identifier, name, birth_date, gender, marital_status, link_other,
-                     link_type, photo_creation, photo_url, telecom_phone, telecom_email, address, poverty_status) 
-                     VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""")
+                     link_type, photo_creation, photo_url, telecom_phone, telecom_email, general_practitioner, address, 
+                     extension_poverty_status, extension_is_head, extension_registration_date, extension_location_code,
+                     extension_education_code, extension_profession_code) 
+                     VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""")
 
         id = id + 1
         identifier = patient.id
@@ -159,8 +167,14 @@ def create_patient_table():
         photo_url = None
         phone = None
         email = None
+        practitioner = None
         address = None
         poverty_status = None
+        head = None
+        registration = None
+        location = None
+        education = None
+        profession = None
 
         if patient.name is not None:
             if f_name := [x for x in patient.name if x.family is not None]:
@@ -169,8 +183,6 @@ def create_patient_table():
                 last_name = l_name[0].given[0]
         if patient.birthDate is not None:
             birth_date = patient.birthDate.date
-        if poverty := [x for x in patient.extension if x.url == "povertyStatus"]:
-            poverty_status = poverty[0].valueBoolean
         if patient.maritalStatus is not None:
             marital_status = patient.maritalStatus.coding[0].code
         if patient.link is not None:
@@ -184,12 +196,33 @@ def create_patient_table():
                 phone = tel_p[0].value
             if tel_e := [x for x in patient.telecom if x.system == "email"]:
                 email = tel_e[0].value
+        if patient.generalPractitioner is not None:
+            practitioner = patient.generalPractitioner[0].reference
         if patient.address is not None:
             if addr := [x for x in patient.address if x.type == "physical"]:
                 address = addr[0].text
+        if poverty := [x for x in patient.extension
+                       if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/1556643849/povertyStatus"]:
+            poverty_status = poverty[0].valueBoolean
+        if is_head := [x for x in patient.extension
+                       if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/960069653/isHead"]:
+            head = is_head[0].valueBoolean
+        if reg := [x for x in patient.extension
+                   if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/960331779/registrationDate"]:
+            registration = reg[0].valueDateTime.date
+        if loc := [x for x in patient.extension
+                   if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/960495619/locationCode"]:
+            location = loc[0].valueReference.reference
+        if edu := [x for x in patient.extension
+                   if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/960331788/educationCode"]:
+            education = edu[0].valueCoding.code
+        if prof := [x for x in patient.extension
+                    if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/960135203/professionCode"]:
+            profession = prof[0].valueCoding.code
 
         data_to_insert = (id, identifier, first_name + " " + last_name, birth_date, gender, marital_status, link_other,
-                          link_type, photo_creation, photo_url, phone, email, address, poverty_status)
+                          link_type, photo_creation, photo_url, phone, email, practitioner, address, poverty_status,
+                          head, registration, location, education, profession)
         cursor.execute(insert, data_to_insert)
         connection.commit()
 
@@ -504,12 +537,13 @@ def create_claim_response_table():
                 created DATE NOT NULL, 
                 outcome VARCHAR(25) NOT NULL,
                 type VARCHAR(5) NOT NULL,
-                status VARCHAR(25) NOT NULL,
+                status VARCHAR(50) NOT NULL,
                 use VARCHAR(25) NOT NULL,
                 insurer VARCHAR(255) NOT NULL, 
                 patient VARCHAR(255) NOT NULL, 
                 communication_request VARCHAR(255),
-                request VARCHAR(255) );""")
+                request VARCHAR(255),
+                requestor VARCHAR(255) );""")
 
     cursor.execute(query)
     connection.commit()
@@ -524,8 +558,8 @@ def create_claim_response_table():
             continue
 
         insert = ("""INSERT INTO Claim_Response (claim_response_id, identifier, created, outcome, type, status, use,
-                     insurer, patient, communication_request, request) 
-                     VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""")
+                     insurer, patient, communication_request, request, requestor) 
+                     VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""")
 
         id = id + 1
         identifier = claim_response.id
@@ -538,13 +572,17 @@ def create_claim_response_table():
         patient = claim_response.patient.reference
         comm_req = None
         request = None
+        requestor = None
 
         if claim_response.communicationRequest is not None:
             comm_req = claim_response.communicationRequest[0].reference
         if claim_response.request is not None:
             request = claim_response.request.reference
+        if claim_response.requestor is not None:
+            requestor = claim_response.requestor.reference
 
-        data_to_insert = (id, identifier, created, outcome, type, status, use, insurer, patient, comm_req, request)
+        data_to_insert = (id, identifier, created, outcome, type, status, use, insurer, patient, comm_req, request,
+                          requestor)
         cursor.execute(insert, data_to_insert)
         connection.commit()
 
