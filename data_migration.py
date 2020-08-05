@@ -29,7 +29,8 @@ def read_json(resource_name):
     req = requests.get(url, auth=HTTPBasicAuth(user, password))
     next_site_url = url + page_offset
 
-    data = {"entry": []}
+    #data = {"entry": []}
+    data = {"resourceType": "Bundle", "entry": [], "type": "searchset"}
     data = json.dumps(data)
     data = json.loads(data)
 
@@ -116,7 +117,12 @@ class Database:
                     telecom_phone VARCHAR(100),
                     telecom_email VARCHAR(100),
                     address VARCHAR(100),
-                    poverty_status VARCHAR(10) );""")
+                    poverty_status VARCHAR(10),
+                    is_head BOOLEAN,
+                    registration_date DATE, 
+                    location_code VARCHAR(255),
+                    education_code VARCHAR(25),
+                    profession_code VARCHAR(25) );""")
 
         cursor.execute(query)
         connection.commit()
@@ -131,8 +137,9 @@ class Database:
                 continue
 
             insert = ("""INSERT INTO Patient (patient_id, identifier, name, birth_date, gender, marital_status, link_other,
-                         link_type, photo_creation, photo_url, telecom_phone, telecom_email, address, poverty_status) 
-                         VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""")
+                         link_type, photo_creation, photo_url, telecom_phone, telecom_email, address, poverty_status, 
+                         is_head, registration_date, location_code, education_code, profession_code) 
+                         VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""")
 
             id = id + 1
             identifier = patient.id
@@ -149,6 +156,11 @@ class Database:
             email = None
             address = None
             poverty_status = None
+            head = None
+            registration = None
+            location = None
+            education = None
+            profession = None
 
             if patient.name is not None:
                 if f_name := [x for x in patient.name if x.family is not None]:
@@ -157,8 +169,18 @@ class Database:
                     last_name = l_name[0].given[0]
             if patient.birthDate is not None:
                 birth_date = patient.birthDate.date
-            if poverty := [x for x in patient.extension if x.url == "povertyStatus"]:
+            if poverty := [x for x in patient.extension if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/1556643849/povertyStatus"]:
                 poverty_status = poverty[0].valueBoolean
+            if is_head := [x for x in patient.extension if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/960069653/isHead"]:
+                head = is_head[0].valueBoolean
+            if reg := [x for x in patient.extension if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/960331779/registrationDate"]:
+                registration = reg[0].valueDateTime.date
+            if loc := [x for x in patient.extension if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/960495619/locationCode"]:
+                location = loc[0].valueReference.reference
+            if edu := [x for x in patient.extension if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/960331788/educationCode"]:
+                education = edu[0].valueCoding.code
+            if prof := [x for x in patient.extension if x.url == "https://openimis.atlassian.net/wiki/spaces/OP/pages/960135203/professionCode"]:
+                profession = prof[0].valueCoding.code
             if patient.maritalStatus is not None:
                 marital_status = patient.maritalStatus.coding[0].code
             if patient.link is not None:
@@ -178,7 +200,8 @@ class Database:
 
             data_to_insert = (
             id, identifier, first_name + " " + last_name, birth_date, gender, marital_status, link_other,
-            link_type, photo_creation, photo_url, phone, email, address, poverty_status)
+            link_type, photo_creation, photo_url, phone, email, address, poverty_status, head, registration, location,
+            education, profession)
             cursor.execute(insert, data_to_insert)
             connection.commit()
 
@@ -296,11 +319,12 @@ class Database:
         cursor.execute(query)
         connection.commit()
         data = read_json("Claim")
+        bundle = Bundle(data)
         id = 0
 
-        for i in range(len(data)):
+        for i in range(len(bundle.entry)):
             try:
-                claim = Claim(data[i]['resource'])
+                claim = bundle.entry[i].resource
             except FHIRValidationError:
                 continue
 
@@ -362,13 +386,14 @@ class Database:
         cursor.execute(query)
         connection.commit()
         data = read_json("Claim")
+        bundle = Bundle(data)
         item_id = 0
         claim_id = 0
 
-        for i in range(len(data)):
+        for i in range(len(bundle.entry)):
             claim_id = claim_id + 1
             try:
-                claim = Claim(data[i]['resource'])
+                claim = bundle.entry[i].resource
             except FHIRValidationError:
                 continue
 
@@ -408,13 +433,14 @@ class Database:
         cursor.execute(query)
         connection.commit()
         data = read_json("Claim")
+        bundle = Bundle(data)
         diagnosis_id = 0
         claim_id = 0
 
-        for i in range(len(data)):
+        for i in range(len(bundle.entry)):
             claim_id = claim_id + 1
             try:
-                claim = Claim(data[i]['resource'])
+                claim = bundle.entry[i].resource
             except FHIRValidationError:
                 continue
 
@@ -452,13 +478,14 @@ class Database:
         cursor.execute(query)
         connection.commit()
         data = read_json("Claim")
+        bundle = Bundle(data)
         insurance_id = 0
         claim_id = 0
 
-        for i in range(len(data)):
+        for i in range(len(bundle.entry)):
             claim_id = claim_id + 1
             try:
-                claim = Claim(data[i]['resource'])
+                claim = bundle.entry[i].resource
             except FHIRValidationError:
                 continue
 
@@ -1089,13 +1116,19 @@ class Database:
         self.create_healthcare_service_table()
         self.create_healthcare_service_coverage_area_table()
 
-    tables = {1: create_activity_definition_table, 2: create_claim_table, 3: create_claim_item_table,
-              4: create_claim_diagnosis_table, 5: create_claim_insurance_table, 6: create_claim_response_table,
-              7: create_claim_response_total_table, 8: create_claim_response_item_table,
-              9: create_claim_response_item_adjudication_table, 10: create_communication_request_table,
-              11: create_condition_table, 12: create_healthcare_service_table,
-              13: create_healthcare_service_coverage_area_table, 14: create_location_table, 15: create_medication_table,
-              16: create_patient_table, 17: create_practitioner_table, 18: create_practitioner_role_table}
+    def __init__(self):
+        self.tables = {1: self.create_activity_definition_table, 2: self.create_claim_table,
+                       3: self.create_claim_item_table,
+                       4: self.create_claim_diagnosis_table, 5: self.create_claim_insurance_table,
+                       6: self.create_claim_response_table,
+                       7: self.create_claim_response_total_table, 8: self.create_claim_response_item_table,
+                       9: self.create_claim_response_item_adjudication_table,
+                       10: self.create_communication_request_table,
+                       11: self.create_condition_table, 12: self.create_healthcare_service_table,
+                       13: self.create_healthcare_service_coverage_area_table, 14: self.create_location_table,
+                       15: self.create_medication_table,
+                       16: self.create_patient_table, 17: self.create_practitioner_table,
+                       18: self.create_practitioner_role_table}
 
 
 class Json:
@@ -1107,7 +1140,7 @@ class Json:
 
         for i in range(len(INPUT)):
             data = read_json(INPUT[i])
-            with open(folder_name + '/' + str(INPUT[i]) + '.json', 'w') as outfile:
+            with open(path + '/' + str(INPUT[i]) + '.json', 'w') as outfile:
                 json.dump(data, outfile, indent=4)
             print("Created " + INPUT[i] + ".json file (" + str(i + 1) + "/" + str(len(INPUT)) + ")\n")
 

@@ -1,0 +1,4615 @@
+{
+    "resourceType": "Bundle",
+    "entry": [
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/858A706A-A6BF-48DC-998D-30EFDAF8EDD2",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2018-10-03",
+                    "start": "2018-10-03"
+                },
+                "created": "2018-10-03",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A02"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/6F480233-5A7B-4034-8107-17B419E32498"
+                },
+                "facility": {
+                    "reference": "HealthcareService/D61C869B-F184-4CAE-B61B-0AD52DDE2354"
+                },
+                "id": "858A706A-A6BF-48DC-998D-30EFDAF8EDD2",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "858A706A-A6BF-48DC-998D-30EFDAF8EDD2"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CID00001"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/28D8DF61-890E-4B1C-A66F-BE02208C99D4"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/3b59e29e-a93f-461a-a4b6-c4a2f865d013"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0182"
+                        },
+                        "quantity": {
+                            "value": 2.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/1c964346-e13f-4301-8ee4-63363a21879e"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 400.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/5350a1ae-5f65-45de-9e83-6026cc345dbc"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I113"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 3,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1250.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/1D464C09-5334-407F-9882-14C097B89BBD"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/6F480233-5A7B-4034-8107-17B419E32498"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 1670.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/D570061A-D586-4A2D-87B6-4F989AA6FC73",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2018-09-22",
+                    "start": "2018-09-22"
+                },
+                "created": "2018-09-22",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A01"
+                        },
+                        "sequence": 2,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/2B4FE2E8-37E7-4841-B045-1071B742C59B"
+                },
+                "facility": {
+                    "reference": "HealthcareService/48EE95FC-D1AC-4C88-9754-1E78EBDB74F3"
+                },
+                "id": "D570061A-D586-4A2D-87B6-4F989AA6FC73",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "D570061A-D586-4A2D-87B6-4F989AA6FC73"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CIB00001"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/28D8DF61-890E-4B1C-A66F-BE02208C99D4"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/d706f92b-df2f-4d6f-b281-71b5c7bb594e"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0182"
+                        },
+                        "quantity": {
+                            "value": 20.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/702f934d-33f4-47d7-a0e2-a8781be75d80"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I26"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 800.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/1D464C09-5334-407F-9882-14C097B89BBD"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/2B4FE2E8-37E7-4841-B045-1071B742C59B"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 1000.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/4047C2FD-AA21-4851-8737-65CA18308774",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2018-09-23",
+                    "start": "2018-09-23"
+                },
+                "created": "2018-09-23",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A15"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/25E0B03F-88F1-44E6-A07F-57FE4D1A5E65"
+                },
+                "facility": {
+                    "reference": "HealthcareService/3AA74C50-4D9F-4372-96C7-9CDE4C3DA47E"
+                },
+                "id": "4047C2FD-AA21-4851-8737-65CA18308774",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "4047C2FD-AA21-4851-8737-65CA18308774"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CIA00001"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/28D8DF61-890E-4B1C-A66F-BE02208C99D4"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/915bcc2a-8625-4ff7-b287-b43f7468570a"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0022"
+                        },
+                        "quantity": {
+                            "value": 2.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 130.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/f80156ac-7c75-4c7c-b06c-cdbcb3d8c50c"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0011"
+                        },
+                        "quantity": {
+                            "value": 4.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 40.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/bd00a688-7355-4808-9b6a-784f9c44d287"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0250"
+                        },
+                        "quantity": {
+                            "value": 3.0
+                        },
+                        "sequence": 3,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 140.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/ed47d040-e8ea-4aec-aac6-e5d022f90287"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0058"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 4,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1010.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/327abb6d-3662-4d44-a7d1-f0c0287133b7"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 5,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 400.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/77e065c9-3c78-4d9f-a328-8351eeec8f0d"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 4.0
+                        },
+                        "sequence": 6,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1900.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/e847301b-86bb-4e5b-9f1c-a19c31eca328"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "R1"
+                        },
+                        "quantity": {
+                            "value": 2.0
+                        },
+                        "sequence": 7,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 330.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/b5cfad79-55d2-4e3b-b82c-4fa44a12d656"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 8,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1300.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/f3f0c756-3ecf-404c-8322-f1df1b2b3fab"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "R1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 9,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 330.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/6709ff91-b7db-4829-9691-8fc150304b87"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 10,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1900.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/faf2532a-9783-4f26-b2db-0c051b5e81bf"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 3.0
+                        },
+                        "sequence": 11,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1900.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/BDBE2B24-EAA7-4434-AF00-950600A0184D"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/25E0B03F-88F1-44E6-A07F-57FE4D1A5E65"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 11810.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/AA241A26-55B3-415F-9412-D63CDA62177F",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2018-09-23",
+                    "start": "2018-09-22"
+                },
+                "created": "2018-09-23",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A21"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "AA241A26-55B3-415F-9412-D63CDA62177F",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "AA241A26-55B3-415F-9412-D63CDA62177F"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "RAD00001"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/74E9590A-8506-421B-800C-4F02C4B78DB0"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/b0697a65-a659-4c34-a85a-63870cebbbd2"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M31"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/87f7ced1-56f0-4a03-9472-71589dab23af"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 400.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/5D71E059-A858-461E-8981-CD457D11AD78"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 21400.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/CFB1B205-5C7C-4F78-BDC3-824E832E0DD1",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2018-09-23",
+                    "start": "2018-09-23"
+                },
+                "created": "2018-09-23",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A50"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/700E5644-0278-446C-9B69-E7138256B14C"
+                },
+                "facility": {
+                    "reference": "HealthcareService/9D438CCA-F1DE-4951-AE50-F138AF49E98E"
+                },
+                "id": "CFB1B205-5C7C-4F78-BDC3-824E832E0DD1",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CFB1B205-5C7C-4F78-BDC3-824E832E0DD1"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "UPDH0001"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/74E9590A-8506-421B-800C-4F02C4B78DB0"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/3bfda284-7b8c-4432-ac72-214b878d30cc"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0011"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 40.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/46b64b25-d1b3-45c1-8220-ba09709783a8"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I125"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 650.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/71cc6870-7833-4d32-9ee3-3fd7f2bc92b3"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I125"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 3,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/F678F7B7-34B3-4D5E-8274-DD416080DD71"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/700E5644-0278-446C-9B69-E7138256B14C"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 21690.0
+                },
+                "type": {
+                    "text": "R"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/2E6568A6-D341-48AA-A02F-DDC338066119",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2018-09-22",
+                    "start": "2018-09-22"
+                },
+                "created": "2018-09-22",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A36"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/700E5644-0278-446C-9B69-E7138256B14C"
+                },
+                "facility": {
+                    "reference": "HealthcareService/9D438CCA-F1DE-4951-AE50-F138AF49E98E"
+                },
+                "id": "2E6568A6-D341-48AA-A02F-DDC338066119",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "2E6568A6-D341-48AA-A02F-DDC338066119"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "UPDH0002"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/74E9590A-8506-421B-800C-4F02C4B78DB0"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/bd390533-ff72-4660-b9a0-f88d66c6982b"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0182"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/09ce82ab-208c-4cc7-bdb1-a62bdd5e56e0"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M14"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/8C90949B-D1E5-47C8-A2D7-D5ECD073F1EE"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/700E5644-0278-446C-9B69-E7138256B14C"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 21010.0
+                },
+                "type": {
+                    "text": "R"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/576D56EF-12D2-4BA8-9640-2A37C41A2052",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2018-09-22",
+                    "start": "2018-09-22"
+                },
+                "created": "2018-09-22",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A02"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/CE442732-4BB2-4730-A8B1-270CAE841D3F"
+                },
+                "facility": {
+                    "reference": "HealthcareService/FABA2038-0E24-4557-B1BD-08584C48FA0D"
+                },
+                "id": "576D56EF-12D2-4BA8-9640-2A37C41A2052",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "576D56EF-12D2-4BA8-9640-2A37C41A2052"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "JADH0001"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/74E9590A-8506-421B-800C-4F02C4B78DB0"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/d7c6b057-2fe4-464f-af8b-ee5f83209236"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0182"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/457502ed-2f3b-48fe-a10d-553243a62099"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 400.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/8C90949B-D1E5-47C8-A2D7-D5ECD073F1EE"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/CE442732-4BB2-4730-A8B1-270CAE841D3F"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 410.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/D806AC22-2623-4CBC-8D76-B80170383FE0",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2018-12-02",
+                    "start": "2018-12-01"
+                },
+                "created": "2019-01-21",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/CE442732-4BB2-4730-A8B1-270CAE841D3F"
+                },
+                "facility": {
+                    "reference": "HealthcareService/FABA2038-0E24-4557-B1BD-08584C48FA0D"
+                },
+                "id": "D806AC22-2623-4CBC-8D76-B80170383FE0",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "D806AC22-2623-4CBC-8D76-B80170383FE0"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CIA06601"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/F05DC888-BE4F-4416-BC64-A568912969C4"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/039deaf7-fe68-4d66-877c-febb07441ac4"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0002"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1000.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/a53c15cc-a074-4bbe-a204-ec68f7ec8df9"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0001"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/f43ee259-f75c-4ea5-b526-c2261ee8315b"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0030"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 3,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 750.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/f3126489-8a32-4984-96be-77c065a36024"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0035"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 4,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 500.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/44228f09-c4cf-4fc6-8092-15f7964bce93"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0031"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 5,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 850.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/40183ce2-ce82-48c1-93d3-f8d58598eead"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I26"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 6,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 800.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/51a34d64-ca7a-41f4-900f-54134bc6dc23"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I125"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 7,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 650.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/559dfdb9-d49f-489e-af3c-b8ab2d9d473d"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 8,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 400.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/d767fd7a-eb0e-4ec1-bb00-4ea317b3065e"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I13"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 9,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 6450.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/940513F7-C9C4-4311-80C4-5E7F04510FB9"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/CE442732-4BB2-4730-A8B1-270CAE841D3F"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 11410.0
+                },
+                "type": {
+                    "text": "E"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/B5485A98-1ED7-4FDC-A40E-80CC9A620BC6",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2018-09-24",
+                    "start": "2018-09-24"
+                },
+                "created": "2018-09-24",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A15"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/25E0B03F-88F1-44E6-A07F-57FE4D1A5E65"
+                },
+                "facility": {
+                    "reference": "HealthcareService/3AA74C50-4D9F-4372-96C7-9CDE4C3DA47E"
+                },
+                "id": "B5485A98-1ED7-4FDC-A40E-80CC9A620BC6",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "B5485A98-1ED7-4FDC-A40E-80CC9A620BC6"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CIG00001"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/28D8DF61-890E-4B1C-A66F-BE02208C99D4"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/11baf08d-d8c0-477f-91a0-c378cf912917"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0022"
+                        },
+                        "quantity": {
+                            "value": 2.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 130.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/0abacc2e-6001-46a2-9011-29c79693d3a6"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0011"
+                        },
+                        "quantity": {
+                            "value": 4.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 40.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/d3bfd367-9a98-452e-9a74-13aeb6fc6cf7"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0250"
+                        },
+                        "quantity": {
+                            "value": 3.0
+                        },
+                        "sequence": 3,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 140.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/27be50ed-d034-4fd0-8f15-3e923230a17e"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 4,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 400.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/07c7112a-ac7b-4c40-ac4e-b5e4a31abc9a"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "R1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 5,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 330.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/b51ede63-9f46-4e87-91e7-1faeaf89cf0e"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 6,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1300.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/BDBE2B24-EAA7-4434-AF00-950600A0184D"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/25E0B03F-88F1-44E6-A07F-57FE4D1A5E65"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 2870.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/F84D9711-D018-4B8D-98FA-0D2CFE624921",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2018-09-28",
+                    "start": "2018-09-28"
+                },
+                "created": "2018-09-28",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A36"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/700E5644-0278-446C-9B69-E7138256B14C"
+                },
+                "facility": {
+                    "reference": "HealthcareService/9D438CCA-F1DE-4951-AE50-F138AF49E98E"
+                },
+                "id": "F84D9711-D018-4B8D-98FA-0D2CFE624921",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "F84D9711-D018-4B8D-98FA-0D2CFE624921"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "UPDH0009"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/74E9590A-8506-421B-800C-4F02C4B78DB0"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/0f1eecd3-6cc5-4281-a6f0-c0c285b55e04"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0182"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/3a214d43-b671-4d2f-8f0f-48241db1798c"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M14"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/8C90949B-D1E5-47C8-A2D7-D5ECD073F1EE"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/700E5644-0278-446C-9B69-E7138256B14C"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 21010.0
+                },
+                "type": {
+                    "text": "R"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/6991F219-A4F0-4DD7-A5E6-4A63C48C1E61",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2019-05-13",
+                    "start": "2019-05-13"
+                },
+                "created": "2019-05-13",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/CE442732-4BB2-4730-A8B1-270CAE841D3F"
+                },
+                "facility": {
+                    "reference": "HealthcareService/FABA2038-0E24-4557-B1BD-08584C48FA0D"
+                },
+                "id": "6991F219-A4F0-4DD7-A5E6-4A63C48C1E61",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "6991F219-A4F0-4DD7-A5E6-4A63C48C1E61"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "test1231"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/BAC8243A-89E8-4BFD-8807-1F7CAB1A24E0"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/85e37026-64d1-449d-8762-ad2f287e6be6"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0182"
+                        },
+                        "quantity": {
+                            "value": 10.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/fe077700-9e45-49c5-9fba-b543b29ac7e5"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 400.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/8CD74B9F-7641-421B-A108-C5DB610BE9FD"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/CE442732-4BB2-4730-A8B1-270CAE841D3F"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 500.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/2478DF96-C708-40C2-9AC8-B1FE30463033",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2019-05-13",
+                    "start": "2019-05-13"
+                },
+                "created": "2019-05-13",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/CE442732-4BB2-4730-A8B1-270CAE841D3F"
+                },
+                "facility": {
+                    "reference": "HealthcareService/FABA2038-0E24-4557-B1BD-08584C48FA0D"
+                },
+                "id": "2478DF96-C708-40C2-9AC8-B1FE30463033",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "2478DF96-C708-40C2-9AC8-B1FE30463033"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "test321"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/17F02BBB-C1BC-422B-B64B-40C4C8C2C56F"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/3b4a5198-50d6-4ff4-9cc2-d07d03c29509"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0182"
+                        },
+                        "quantity": {
+                            "value": 10.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/adba7e76-5953-44b8-aa95-5bcaedca0ea6"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 400.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/323755CA-D473-426A-9007-2CCBD9176F62"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/CE442732-4BB2-4730-A8B1-270CAE841D3F"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 500.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/6F6062DB-F912-4FC9-B659-BA9D0032EF99",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2019-05-13",
+                    "start": "2019-05-13"
+                },
+                "created": "2019-05-14",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A03"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A01"
+                        },
+                        "sequence": 2,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_1"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A02"
+                        },
+                        "sequence": 3,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "6F6062DB-F912-4FC9-B659-BA9D0032EF99",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "6F6062DB-F912-4FC9-B659-BA9D0032EF99"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "chs123"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/e4a7c795-4260-4761-be42-f089ec6987e7"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0002"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1000.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/02933958-7666-4685-93c4-1af34939a5e2"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0002"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1000.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/2d26643c-0d5f-40e6-bb2f-03f4dd55a0e3"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0002"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 3,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1000.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/26867541-af4f-43ad-85ec-33d46691b8e4"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M4"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 4,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/08b7dd88-a165-4bb8-95d9-ad248860dc13"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M3"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 5,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/42300491-59b0-42b3-af4f-1412b3a7a352"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M6"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 6,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/26a145d5-d807-454b-ae36-ed76015816d9"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M2"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 7,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/F2EC72C9-7489-45AA-95C5-30D79216E74F"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "supportingInfo": [
+                    {
+                        "category": {
+                            "text": "guarantee_id"
+                        },
+                        "sequence": 1,
+                        "valueString": "sdasdasd"
+                    },
+                    {
+                        "category": {
+                            "text": "explanation"
+                        },
+                        "sequence": 2,
+                        "valueString": "asdasdasd"
+                    }
+                ],
+                "total": {
+                    "currency": "$",
+                    "value": 87000.0
+                },
+                "type": {
+                    "text": "E"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/DCCFAE86-F121-4B47-B9F7-1C62E7C486ED",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2019-05-13",
+                    "start": "2019-05-13"
+                },
+                "created": "2019-05-13",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/B54"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "DCCFAE86-F121-4B47-B9F7-1C62E7C486ED",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "DCCFAE86-F121-4B47-B9F7-1C62E7C486ED"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "q2133"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/365DDC84-3572-49C5-A0EB-AB46D28BFB0C"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/a002a59d-55b1-470a-9ec6-d7c3603dd18a"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0182"
+                        },
+                        "quantity": {
+                            "value": 16.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/14ddfbbf-499a-4b34-b71c-5bcfaa92b728"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0017"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 300.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/e42506ab-30cc-4354-bc4c-9e792e03567d"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I117"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 3,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 650.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/adeca13f-3bc6-4167-8480-ef73575e0552"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M3"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 4,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/3f791b15-511b-407f-878f-0746313d6dcb"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 5,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/CC8685F3-255C-48A0-AE0A-7C356E02ED72"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 43110.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/A914712D-4160-4F8B-848D-C984718E91F9",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "start": "2019-05-19"
+                },
+                "created": "2019-05-19",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "A914712D-4160-4F8B-848D-C984718E91F9",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "A914712D-4160-4F8B-848D-C984718E91F9"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "33311"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/E1605F7B-0229-42C5-B0D4-40D8D2BD7F93"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/e9446178-9498-4386-aeca-815aa528c738"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0001"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/c7b9d8f1-a9e3-4f85-89c7-97a74b8b433e"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M35"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/A165DAD9-2D9E-4D3B-93F6-FCF4BE858AB0"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 21010.0
+                },
+                "type": {
+                    "text": "E"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/81A584CA-4758-40C2-9CCD-8D5C893A4F75",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2019-05-22",
+                    "start": "2019-05-22"
+                },
+                "created": "2019-05-23",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/C10"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/G11"
+                        },
+                        "sequence": 2,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "81A584CA-4758-40C2-9CCD-8D5C893A4F75",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "81A584CA-4758-40C2-9CCD-8D5C893A4F75"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "3514"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/739DDCB4-5950-4AAE-AF59-A894EA1FEC5D"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/70640529-0065-4e59-8f2a-a3ffcdd7d0d6"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0039"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 720.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/0DAC3D8A-3A7C-42B4-97B4-3F3968D4B35C"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "supportingInfo": [
+                    {
+                        "category": {
+                            "text": "explanation"
+                        },
+                        "sequence": 1,
+                        "valueString": "Testing"
+                    }
+                ],
+                "total": {
+                    "currency": "$",
+                    "value": 720.0
+                },
+                "type": {
+                    "text": "E"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/70453F04-1641-4BF3-87F0-28F6176B2B31",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "start": "2019-05-22"
+                },
+                "created": "2019-05-22",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/J20"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "70453F04-1641-4BF3-87F0-28F6176B2B31",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "70453F04-1641-4BF3-87F0-28F6176B2B31"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "1308"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/739DDCB4-5950-4AAE-AF59-A894EA1FEC5D"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/5b66013c-240e-4dbb-bc1e-10f0184c370d"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0067"
+                        },
+                        "quantity": {
+                            "value": 4.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 200.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/6f52fde3-01d1-4c7d-a6fa-6465693f407a"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M50"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/0DAC3D8A-3A7C-42B4-97B4-3F3968D4B35C"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 21800.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/AEE42FDD-A706-45DF-BFC0-EDEBC58DDD12",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2019-05-22",
+                    "start": "2019-05-22"
+                },
+                "created": "2019-05-22",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/J20"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "AEE42FDD-A706-45DF-BFC0-EDEBC58DDD12",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "AEE42FDD-A706-45DF-BFC0-EDEBC58DDD12"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "1308/2"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/739DDCB4-5950-4AAE-AF59-A894EA1FEC5D"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/7305abf8-50ee-4734-9409-21c2e545a9bc"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0067"
+                        },
+                        "quantity": {
+                            "value": 4.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 200.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/5cab7190-6e9f-434e-be3d-6b780a4f13fb"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "M50"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 21000.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/0DAC3D8A-3A7C-42B4-97B4-3F3968D4B35C"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "supportingInfo": [
+                    {
+                        "category": {
+                            "text": "explanation"
+                        },
+                        "sequence": 1,
+                        "valueString": "ReClaim"
+                    }
+                ],
+                "total": {
+                    "currency": "$",
+                    "value": 21800.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/1C2F2325-0953-4E93-BC8F-083EA8C37BD1",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2019-05-22",
+                    "start": "2019-05-22"
+                },
+                "created": "2019-05-22",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A06"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "1C2F2325-0953-4E93-BC8F-083EA8C37BD1",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "1C2F2325-0953-4E93-BC8F-083EA8C37BD1"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "5513"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/9040E831-EDAB-4F29-BB16-A84BFC24B9A9"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/bd5ab74e-d972-4878-92b2-127cb40629b7"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0087"
+                        },
+                        "quantity": {
+                            "value": 3.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 60.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/885985AC-2EE1-433F-82F7-0000F95A5479"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 180.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/CA358AC9-24A5-4ED3-9409-4720DB1FD1E5",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "start": "2019-05-22"
+                },
+                "created": "2019-05-22",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "CA358AC9-24A5-4ED3-9409-4720DB1FD1E5",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CA358AC9-24A5-4ED3-9409-4720DB1FD1E5"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "8745"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/5B87C291-79E4-41C3-9C55-DB7EAE69D6BD"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/00bdffbe-b3af-4de9-8ddb-d65f42d6b93e"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0140"
+                        },
+                        "quantity": {
+                            "value": 2.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 310.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/C1A34AEC-E3C5-4336-A93E-51861D5F6ABB"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 620.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/A7654A3B-C034-4D43-B790-4971ABDD282B",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "start": "2019-05-22"
+                },
+                "created": "2019-05-22",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "A7654A3B-C034-4D43-B790-4971ABDD282B",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "A7654A3B-C034-4D43-B790-4971ABDD282B"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "5595"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/5B87C291-79E4-41C3-9C55-DB7EAE69D6BD"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/b8869f24-bc6c-4bcb-982f-3af5e57cd7a7"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0140"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 310.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/71250e73-e32e-43c0-bcce-388a9a11ad3c"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0009"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 290.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/E7802F07-0C79-454B-BB50-A915EB285CB1"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 600.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/10B4F317-7476-4FA8-8C8B-906F20FE743B",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "start": "2019-05-22"
+                },
+                "created": "2019-05-22",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/72EE8F56-4653-4218-A3A0-988D7F36BE46"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "10B4F317-7476-4FA8-8C8B-906F20FE743B",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "10B4F317-7476-4FA8-8C8B-906F20FE743B"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "5331"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/2847EA35-E7E7-430C-A10A-F5082DD34AE0"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/0789d31e-d8f3-4f06-baea-d0f8f4e3999c"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0078"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 800.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/EADCBECB-27A2-4E0C-A2FE-79B6F4EFCF50"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/72EE8F56-4653-4218-A3A0-988D7F36BE46"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 800.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/59FD9B58-6435-4746-BEA3-9F7A53EF2450",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2019-05-24",
+                    "start": "2019-05-22"
+                },
+                "created": "2019-05-24",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "59FD9B58-6435-4746-BEA3-9F7A53EF2450",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "59FD9B58-6435-4746-BEA3-9F7A53EF2450"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "4035"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/2847EA35-E7E7-430C-A10A-F5082DD34AE0"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/ca2c8582-d576-4d83-bec8-e4923116c17a"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0078"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 800.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/EADCBECB-27A2-4E0C-A2FE-79B6F4EFCF50"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 800.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/26F03C04-6746-4DDD-8D3F-6760A4B67671",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2019-05-24",
+                    "start": "2019-05-21"
+                },
+                "created": "2019-05-24",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "26F03C04-6746-4DDD-8D3F-6760A4B67671",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "26F03C04-6746-4DDD-8D3F-6760A4B67671"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "6171"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/2847EA35-E7E7-430C-A10A-F5082DD34AE0"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/7729df29-6a56-4c48-a01c-9c8d0c016edb"
+                                }
+                            }
+                        ],
+                        "informationSequence": [
+                            2
+                        ],
+                        "productOrService": {
+                            "text": "0078"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 800.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/EADCBECB-27A2-4E0C-A2FE-79B6F4EFCF50"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "supportingInfo": [
+                    {
+                        "category": {
+                            "text": "explanation"
+                        },
+                        "sequence": 1,
+                        "valueString": "Resubmit"
+                    },
+                    {
+                        "category": {
+                            "text": "item_explanation"
+                        },
+                        "sequence": 2,
+                        "valueString": "ReSubmit"
+                    }
+                ],
+                "total": {
+                    "currency": "$",
+                    "value": 800.0
+                },
+                "type": {
+                    "text": "E"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/5333CB12-3279-467F-871C-6A0ED4CCD8FD",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "start": "2019-05-24"
+                },
+                "created": "2019-05-24",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A00"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "facility": {
+                    "reference": "HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                },
+                "id": "5333CB12-3279-467F-871C-6A0ED4CCD8FD",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "5333CB12-3279-467F-871C-6A0ED4CCD8FD"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "3077"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/2847EA35-E7E7-430C-A10A-F5082DD34AE0"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/185854d6-c01c-48f8-b837-5462de0a1598"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0078"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 800.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/EADCBECB-27A2-4E0C-A2FE-79B6F4EFCF50"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/BC32112F-9DF2-4F46-AD5D-97727E07CBD7"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 800.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/680688F7-74F6-4727-B864-58276F98386A",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "start": "2019-05-28"
+                },
+                "created": "2019-05-28",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/D58"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/C312F4A5-3F0B-449C-937E-C5F04F1ED1BD"
+                },
+                "facility": {
+                    "reference": "HealthcareService/118536DA-B37A-40A3-838B-051B02570999"
+                },
+                "id": "680688F7-74F6-4727-B864-58276F98386A",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "680688F7-74F6-4727-B864-58276F98386A"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "9620"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/27C6CF30-A05A-4C6D-BBF6-6652F6A0C9FB"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/68af2c23-fa84-408e-a600-5a2142c2d029"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0015"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1760.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/4C3F1C31-365D-43AD-AB79-193CD58208B5"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/C312F4A5-3F0B-449C-937E-C5F04F1ED1BD"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 1760.0
+                },
+                "type": {
+                    "text": "R"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/F4E7353D-7F03-42F1-A872-C7E91D0EFA3F",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "start": "2019-05-28"
+                },
+                "created": "2019-05-28",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/A06"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/C312F4A5-3F0B-449C-937E-C5F04F1ED1BD"
+                },
+                "facility": {
+                    "reference": "HealthcareService/118536DA-B37A-40A3-838B-051B02570999"
+                },
+                "id": "F4E7353D-7F03-42F1-A872-C7E91D0EFA3F",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "F4E7353D-7F03-42F1-A872-C7E91D0EFA3F"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "9400"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/27C6CF30-A05A-4C6D-BBF6-6652F6A0C9FB"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/337d78ba-325b-4a23-ad1e-a21b052dbd31"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0015"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1760.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/4C3F1C31-365D-43AD-AB79-193CD58208B5"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/C312F4A5-3F0B-449C-937E-C5F04F1ED1BD"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 1760.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Claim/2DCC935E-7D2D-4C31-B126-6659EF2C0C50",
+            "resource": {
+                "resourceType": "Claim",
+                "billablePeriod": {
+                    "end": "2019-11-03",
+                    "start": "2019-11-03"
+                },
+                "created": "2019-11-03",
+                "diagnosis": [
+                    {
+                        "diagnosisReference": {
+                            "reference": "Condition/B01"
+                        },
+                        "sequence": 1,
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "icd_0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "enterer": {
+                    "reference": "Practitioner/6F480233-5A7B-4034-8107-17B419E32498"
+                },
+                "facility": {
+                    "reference": "HealthcareService/D61C869B-F184-4CAE-B61B-0AD52DDE2354"
+                },
+                "id": "2DCC935E-7D2D-4C31-B126-6659EF2C0C50",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "2DCC935E-7D2D-4C31-B126-6659EF2C0C50"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CID00010"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "coverage": {
+                            "reference": "Coverage/28D8DF61-890E-4B1C-A66F-BE02208C99D4"
+                        },
+                        "focal": true,
+                        "sequence": 0
+                    }
+                ],
+                "item": [
+                    {
+                        "category": {
+                            "text": "item"
+                        },
+                        "extension": [
+                            {
+                                "url": "Medication",
+                                "valueReference": {
+                                    "reference": "Medication/097ca688-52ce-4a42-8c76-a5e0f938c07e"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "0182"
+                        },
+                        "quantity": {
+                            "value": 2.0
+                        },
+                        "sequence": 1,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 10.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/76c12f56-2d48-4279-ba32-1e87ea5f8588"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "I113"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 2,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 1250.0
+                        }
+                    },
+                    {
+                        "category": {
+                            "text": "service"
+                        },
+                        "extension": [
+                            {
+                                "url": "ActivityDefinition",
+                                "valueReference": {
+                                    "reference": "ActivityDefinition/2c77a6b3-e576-46c9-9711-6f8957ef7b77"
+                                }
+                            }
+                        ],
+                        "productOrService": {
+                            "text": "A1"
+                        },
+                        "quantity": {
+                            "value": 1.0
+                        },
+                        "sequence": 3,
+                        "unitPrice": {
+                            "currency": "$",
+                            "value": 400.0
+                        }
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/1D464C09-5334-407F-9882-14C097B89BBD"
+                },
+                "priority": {
+                    "coding": [
+                        {
+                            "code": "normal"
+                        }
+                    ]
+                },
+                "provider": {
+                    "reference": "PractitionerRole/6F480233-5A7B-4034-8107-17B419E32498"
+                },
+                "status": "active",
+                "total": {
+                    "currency": "$",
+                    "value": 1670.0
+                },
+                "type": {
+                    "text": "O"
+                },
+                "use": "claim"
+            }
+        }
+    ],
+    "type": "searchset"
+}

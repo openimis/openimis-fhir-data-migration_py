@@ -1,0 +1,2236 @@
+{
+    "resourceType": "Bundle",
+    "entry": [
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/8ACF51CF-EB6D-44DB-AED5-75412408E791",
+            "resource": {
+                "resourceType": "Location",
+                "id": "8ACF51CF-EB6D-44DB-AED5-75412408E791",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "8ACF51CF-EB6D-44DB-AED5-75412408E791"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1"
+                    }
+                ],
+                "name": "Ultha",
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "R",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "region"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282",
+            "resource": {
+                "resourceType": "Location",
+                "id": "356E8BB4-46C5-4431-8A4B-2DEA60A88282",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1"
+                    }
+                ],
+                "name": "Rapta",
+                "partOf": {
+                    "reference": "Location/8ACF51CF-EB6D-44DB-AED5-75412408E791"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "D",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "district"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/5A83F5F8-2980-4351-897D-74CF5E380C12",
+            "resource": {
+                "resourceType": "Location",
+                "id": "5A83F5F8-2980-4351-897D-74CF5E380C12",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "5A83F5F8-2980-4351-897D-74CF5E380C12"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R2"
+                    }
+                ],
+                "name": "Tahida",
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "R",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "region"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/6931F346-9DCA-4380-ABF9-50D2FE0C63B7",
+            "resource": {
+                "resourceType": "Location",
+                "id": "6931F346-9DCA-4380-ABF9-50D2FE0C63B7",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "6931F346-9DCA-4380-ABF9-50D2FE0C63B7"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R2D1"
+                    }
+                ],
+                "name": "Rajo",
+                "partOf": {
+                    "reference": "Location/5A83F5F8-2980-4351-897D-74CF5E380C12"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "D",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "district"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/BB694CB3-93F9-416F-82AE-95C135E700F9",
+            "resource": {
+                "resourceType": "Location",
+                "id": "BB694CB3-93F9-416F-82AE-95C135E700F9",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "BB694CB3-93F9-416F-82AE-95C135E700F9"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R2D2"
+                    }
+                ],
+                "name": "Vida",
+                "partOf": {
+                    "reference": "Location/5A83F5F8-2980-4351-897D-74CF5E380C12"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "D",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "district"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/246B8053-09BC-4A08-8A47-77FEC53013A8",
+            "resource": {
+                "resourceType": "Location",
+                "id": "246B8053-09BC-4A08-8A47-77FEC53013A8",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "246B8053-09BC-4A08-8A47-77FEC53013A8"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R2D1M1"
+                    }
+                ],
+                "name": "Jaber",
+                "partOf": {
+                    "reference": "Location/6931F346-9DCA-4380-ABF9-50D2FE0C63B7"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/BEE392F1-07D8-482F-B601-6C8BBA0BF2A9",
+            "resource": {
+                "resourceType": "Location",
+                "id": "BEE392F1-07D8-482F-B601-6C8BBA0BF2A9",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "BEE392F1-07D8-482F-B601-6C8BBA0BF2A9"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R2D1M1V1"
+                    }
+                ],
+                "name": "Utha",
+                "partOf": {
+                    "reference": "Location/246B8053-09BC-4A08-8A47-77FEC53013A8"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/D9062609-5B6D-4C4A-A3FF-18E925B69EC3",
+            "resource": {
+                "resourceType": "Location",
+                "id": "D9062609-5B6D-4C4A-A3FF-18E925B69EC3",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "D9062609-5B6D-4C4A-A3FF-18E925B69EC3"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M1"
+                    }
+                ],
+                "name": "Achi",
+                "partOf": {
+                    "reference": "Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/BC817DD0-E845-4D1A-B1A7-BC2AD1A69506",
+            "resource": {
+                "resourceType": "Location",
+                "id": "BC817DD0-E845-4D1A-B1A7-BC2AD1A69506",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "BC817DD0-E845-4D1A-B1A7-BC2AD1A69506"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M1V1"
+                    }
+                ],
+                "name": "Rachla",
+                "partOf": {
+                    "reference": "Location/D9062609-5B6D-4C4A-A3FF-18E925B69EC3"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/28D325CC-14E7-407E-B3CE-DAB2D7D2897E",
+            "resource": {
+                "resourceType": "Location",
+                "id": "28D325CC-14E7-407E-B3CE-DAB2D7D2897E",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "28D325CC-14E7-407E-B3CE-DAB2D7D2897E"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R2D2M1"
+                    }
+                ],
+                "name": "Majhi",
+                "partOf": {
+                    "reference": "Location/BB694CB3-93F9-416F-82AE-95C135E700F9"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/17B49C1B-387D-4125-B257-DCBB7B298AFA",
+            "resource": {
+                "resourceType": "Location",
+                "id": "17B49C1B-387D-4125-B257-DCBB7B298AFA",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "17B49C1B-387D-4125-B257-DCBB7B298AFA"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R2D2M1V1"
+                    }
+                ],
+                "name": "Radho",
+                "partOf": {
+                    "reference": "Location/28D325CC-14E7-407E-B3CE-DAB2D7D2897E"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/38232E42-A8B2-4E34-9ECA-4A4060B3B30F",
+            "resource": {
+                "resourceType": "Location",
+                "id": "38232E42-A8B2-4E34-9ECA-4A4060B3B30F",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "38232E42-A8B2-4E34-9ECA-4A4060B3B30F"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M2"
+                    }
+                ],
+                "name": "Jamu",
+                "partOf": {
+                    "reference": "Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/E694C4EB-DFD5-48A1-8930-E7A555B3231F",
+            "resource": {
+                "resourceType": "Location",
+                "id": "E694C4EB-DFD5-48A1-8930-E7A555B3231F",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "E694C4EB-DFD5-48A1-8930-E7A555B3231F"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M3"
+                    }
+                ],
+                "name": "Adhi",
+                "partOf": {
+                    "reference": "Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/CDC7108F-C269-4DDE-BF11-168352CBD167",
+            "resource": {
+                "resourceType": "Location",
+                "id": "CDC7108F-C269-4DDE-BF11-168352CBD167",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CDC7108F-C269-4DDE-BF11-168352CBD167"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M4"
+                    }
+                ],
+                "name": "Jobber",
+                "partOf": {
+                    "reference": "Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/FB145955-176C-47ED-A52E-0D0F2D58C71B",
+            "resource": {
+                "resourceType": "Location",
+                "id": "FB145955-176C-47ED-A52E-0D0F2D58C71B",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "FB145955-176C-47ED-A52E-0D0F2D58C71B"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M5"
+                    }
+                ],
+                "name": "Radler",
+                "partOf": {
+                    "reference": "Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/A9885560-9803-496F-983C-95F644545A5A",
+            "resource": {
+                "resourceType": "Location",
+                "id": "A9885560-9803-496F-983C-95F644545A5A",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "A9885560-9803-496F-983C-95F644545A5A"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M1V2"
+                    }
+                ],
+                "name": "Darbu",
+                "partOf": {
+                    "reference": "Location/D9062609-5B6D-4C4A-A3FF-18E925B69EC3"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/B6C753E2-FD1D-47FD-B5AE-9A9F4F421ED3",
+            "resource": {
+                "resourceType": "Location",
+                "id": "B6C753E2-FD1D-47FD-B5AE-9A9F4F421ED3",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "B6C753E2-FD1D-47FD-B5AE-9A9F4F421ED3"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M1V3"
+                    }
+                ],
+                "name": "Agdo",
+                "partOf": {
+                    "reference": "Location/D9062609-5B6D-4C4A-A3FF-18E925B69EC3"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/C341D6E0-6E86-4259-AEA4-6C90449B85EE",
+            "resource": {
+                "resourceType": "Location",
+                "id": "C341D6E0-6E86-4259-AEA4-6C90449B85EE",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "C341D6E0-6E86-4259-AEA4-6C90449B85EE"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D2"
+                    }
+                ],
+                "name": "Jambero",
+                "partOf": {
+                    "reference": "Location/8ACF51CF-EB6D-44DB-AED5-75412408E791"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "D",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "district"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/21D6C3BC-532F-4532-AAAE-E915839B831C",
+            "resource": {
+                "resourceType": "Location",
+                "id": "21D6C3BC-532F-4532-AAAE-E915839B831C",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "21D6C3BC-532F-4532-AAAE-E915839B831C"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D3"
+                    }
+                ],
+                "name": "Uptol",
+                "partOf": {
+                    "reference": "Location/8ACF51CF-EB6D-44DB-AED5-75412408E791"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "D",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "district"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/FE427CC0-679E-4464-A20C-47A4B312EB4F",
+            "resource": {
+                "resourceType": "Location",
+                "id": "FE427CC0-679E-4464-A20C-47A4B312EB4F",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "FE427CC0-679E-4464-A20C-47A4B312EB4F"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D2M1"
+                    }
+                ],
+                "name": "Actoloby",
+                "partOf": {
+                    "reference": "Location/C341D6E0-6E86-4259-AEA4-6C90449B85EE"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/18D21A1C-3BC7-4563-B34F-41EE56EE3F6A",
+            "resource": {
+                "resourceType": "Location",
+                "id": "18D21A1C-3BC7-4563-B34F-41EE56EE3F6A",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "18D21A1C-3BC7-4563-B34F-41EE56EE3F6A"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D2M2"
+                    }
+                ],
+                "name": "Remorlogy",
+                "partOf": {
+                    "reference": "Location/C341D6E0-6E86-4259-AEA4-6C90449B85EE"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/496E065A-6913-4C83-9F1F-278BA7424824",
+            "resource": {
+                "resourceType": "Location",
+                "id": "496E065A-6913-4C83-9F1F-278BA7424824",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "496E065A-6913-4C83-9F1F-278BA7424824"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D2M1V1"
+                    }
+                ],
+                "name": "Holobo",
+                "partOf": {
+                    "reference": "Location/FE427CC0-679E-4464-A20C-47A4B312EB4F"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/0D3AA190-716C-4C0C-A0EF-C5072783BDF0",
+            "resource": {
+                "resourceType": "Location",
+                "id": "0D3AA190-716C-4C0C-A0EF-C5072783BDF0",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "0D3AA190-716C-4C0C-A0EF-C5072783BDF0"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D2M1V2"
+                    }
+                ],
+                "name": "Octo",
+                "partOf": {
+                    "reference": "Location/FE427CC0-679E-4464-A20C-47A4B312EB4F"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/3F56F3BA-862A-4303-850A-C1E769F1098F",
+            "resource": {
+                "resourceType": "Location",
+                "id": "3F56F3BA-862A-4303-850A-C1E769F1098F",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "3F56F3BA-862A-4303-850A-C1E769F1098F"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D2M1V3"
+                    }
+                ],
+                "name": "Raberjab",
+                "partOf": {
+                    "reference": "Location/FE427CC0-679E-4464-A20C-47A4B312EB4F"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/5F50D2BE-8E1B-458A-AE40-E39506A86CF7",
+            "resource": {
+                "resourceType": "Location",
+                "id": "5F50D2BE-8E1B-458A-AE40-E39506A86CF7",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "5F50D2BE-8E1B-458A-AE40-E39506A86CF7"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D2M2V1"
+                    }
+                ],
+                "name": "Agilo",
+                "partOf": {
+                    "reference": "Location/18D21A1C-3BC7-4563-B34F-41EE56EE3F6A"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/F4300D36-0114-466D-8FA4-7D751387B9F1",
+            "resource": {
+                "resourceType": "Location",
+                "id": "F4300D36-0114-466D-8FA4-7D751387B9F1",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "F4300D36-0114-466D-8FA4-7D751387B9F1"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M3V1"
+                    }
+                ],
+                "name": "Rathula",
+                "partOf": {
+                    "reference": "Location/E694C4EB-DFD5-48A1-8930-E7A555B3231F"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/8B0C2284-8214-47AE-B2D8-4C376B036682",
+            "resource": {
+                "resourceType": "Location",
+                "id": "8B0C2284-8214-47AE-B2D8-4C376B036682",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "8B0C2284-8214-47AE-B2D8-4C376B036682"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M2V1"
+                    }
+                ],
+                "name": "Jamula",
+                "partOf": {
+                    "reference": "Location/38232E42-A8B2-4E34-9ECA-4A4060B3B30F"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/CCADF2D4-367E-442C-9F7C-713FAD45FC86",
+            "resource": {
+                "resourceType": "Location",
+                "id": "CCADF2D4-367E-442C-9F7C-713FAD45FC86",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CCADF2D4-367E-442C-9F7C-713FAD45FC86"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M4V1"
+                    }
+                ],
+                "name": "Jobla",
+                "partOf": {
+                    "reference": "Location/CDC7108F-C269-4DDE-BF11-168352CBD167"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/ADE5CA4A-F695-4BCD-B584-09E881F0E195",
+            "resource": {
+                "resourceType": "Location",
+                "id": "ADE5CA4A-F695-4BCD-B584-09E881F0E195",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "ADE5CA4A-F695-4BCD-B584-09E881F0E195"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D1M5V1"
+                    }
+                ],
+                "name": "Rolo",
+                "partOf": {
+                    "reference": "Location/FB145955-176C-47ED-A52E-0D0F2D58C71B"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/8E67AC9A-2D2A-4763-A99A-8F9638A41943",
+            "resource": {
+                "resourceType": "Location",
+                "id": "8E67AC9A-2D2A-4763-A99A-8F9638A41943",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "8E67AC9A-2D2A-4763-A99A-8F9638A41943"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D3M1"
+                    }
+                ],
+                "name": "Uminal",
+                "partOf": {
+                    "reference": "Location/21D6C3BC-532F-4532-AAAE-E915839B831C"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/F1F63F04-2597-4131-974A-8C6487F05E78",
+            "resource": {
+                "resourceType": "Location",
+                "id": "F1F63F04-2597-4131-974A-8C6487F05E78",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "F1F63F04-2597-4131-974A-8C6487F05E78"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R1D3M1V1"
+                    }
+                ],
+                "name": "Uminalum",
+                "partOf": {
+                    "reference": "Location/8E67AC9A-2D2A-4763-A99A-8F9638A41943"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/4FC85314-B7B7-404F-889E-7985DED855F1",
+            "resource": {
+                "resourceType": "Location",
+                "id": "4FC85314-B7B7-404F-889E-7985DED855F1",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "4FC85314-B7B7-404F-889E-7985DED855F1"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R3"
+                    }
+                ],
+                "name": "Sekong",
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "R",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "region"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/5CF9C155-7FC3-4A1C-BB26-E6B97934C5BD",
+            "resource": {
+                "resourceType": "Location",
+                "id": "5CF9C155-7FC3-4A1C-BB26-E6B97934C5BD",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "5CF9C155-7FC3-4A1C-BB26-E6B97934C5BD"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R3D1"
+                    }
+                ],
+                "name": "Lamam",
+                "partOf": {
+                    "reference": "Location/4FC85314-B7B7-404F-889E-7985DED855F1"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "D",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "district"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/57E592AA-613E-4342-B14C-2A88A7BAEB5C",
+            "resource": {
+                "resourceType": "Location",
+                "id": "57E592AA-613E-4342-B14C-2A88A7BAEB5C",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "57E592AA-613E-4342-B14C-2A88A7BAEB5C"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "001"
+                    }
+                ],
+                "name": "VTE",
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "R",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "region"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/05368085-11EF-4C1E-A714-2F094CCE10FD",
+            "resource": {
+                "resourceType": "Location",
+                "id": "05368085-11EF-4C1E-A714-2F094CCE10FD",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "05368085-11EF-4C1E-A714-2F094CCE10FD"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "005"
+                    }
+                ],
+                "name": "xaithany",
+                "partOf": {
+                    "reference": "Location/8ACF51CF-EB6D-44DB-AED5-75412408E791"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "D",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "district"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/CCCB35A4-8145-4950-BAC6-F34DDFB95711",
+            "resource": {
+                "resourceType": "Location",
+                "id": "CCCB35A4-8145-4950-BAC6-F34DDFB95711",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "CCCB35A4-8145-4950-BAC6-F34DDFB95711"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "002"
+                    }
+                ],
+                "name": "xaithany",
+                "partOf": {
+                    "reference": "Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/153E33B3-275A-4CD2-8C08-05AB619F791B",
+            "resource": {
+                "resourceType": "Location",
+                "id": "153E33B3-275A-4CD2-8C08-05AB619F791B",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "153E33B3-275A-4CD2-8C08-05AB619F791B"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "002"
+                    }
+                ],
+                "name": "xaythany",
+                "partOf": {
+                    "reference": "Location/5CF9C155-7FC3-4A1C-BB26-E6B97934C5BD"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/8CEC3F0D-2E45-4D12-A37F-5618561AE121",
+            "resource": {
+                "resourceType": "Location",
+                "id": "8CEC3F0D-2E45-4D12-A37F-5618561AE121",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "8CEC3F0D-2E45-4D12-A37F-5618561AE121"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "001"
+                    }
+                ],
+                "name": "dontew",
+                "partOf": {
+                    "reference": "Location/D9062609-5B6D-4C4A-A3FF-18E925B69EC3"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/5365210B-68FB-4314-9047-03BACBFA0580",
+            "resource": {
+                "resourceType": "Location",
+                "id": "5365210B-68FB-4314-9047-03BACBFA0580",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "5365210B-68FB-4314-9047-03BACBFA0580"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "001"
+                    }
+                ],
+                "name": "Sekong",
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/860F1ADE-F82B-4DFC-87E2-FB92F41F9057",
+            "resource": {
+                "resourceType": "Location",
+                "id": "860F1ADE-F82B-4DFC-87E2-FB92F41F9057",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "860F1ADE-F82B-4DFC-87E2-FB92F41F9057"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R4"
+                    }
+                ],
+                "name": "Lao PDR",
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "R",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "region"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/459EFB95-ABC7-4079-83B7-1D5886F1C8C1",
+            "resource": {
+                "resourceType": "Location",
+                "id": "459EFB95-ABC7-4079-83B7-1D5886F1C8C1",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "459EFB95-ABC7-4079-83B7-1D5886F1C8C1"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R4D4"
+                    }
+                ],
+                "name": "Vientiane capital",
+                "partOf": {
+                    "reference": "Location/8ACF51CF-EB6D-44DB-AED5-75412408E791"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "D",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "district"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/4A7FE549-E449-40BE-BF9E-AAD01DBAAFD2",
+            "resource": {
+                "resourceType": "Location",
+                "id": "4A7FE549-E449-40BE-BF9E-AAD01DBAAFD2",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "4A7FE549-E449-40BE-BF9E-AAD01DBAAFD2"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R4D4M4"
+                    }
+                ],
+                "name": "Sikottabong",
+                "partOf": {
+                    "reference": "Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/2979564B-D515-4EDC-A16E-17C99CB83203",
+            "resource": {
+                "resourceType": "Location",
+                "id": "2979564B-D515-4EDC-A16E-17C99CB83203",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "2979564B-D515-4EDC-A16E-17C99CB83203"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "R4D4M4V4"
+                    }
+                ],
+                "name": "Nonteng North",
+                "partOf": {
+                    "reference": "Location/D9062609-5B6D-4C4A-A3FF-18E925B69EC3"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/AD768B10-B7D3-492B-9133-66DCD4DA0E24",
+            "resource": {
+                "resourceType": "Location",
+                "id": "AD768B10-B7D3-492B-9133-66DCD4DA0E24",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "AD768B10-B7D3-492B-9133-66DCD4DA0E24"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "55"
+                    }
+                ],
+                "name": "Tedt",
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "R",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "region"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/9FEB009E-80DE-48BB-9C0C-A3E8F9E9EBE1",
+            "resource": {
+                "resourceType": "Location",
+                "id": "9FEB009E-80DE-48BB-9C0C-A3E8F9E9EBE1",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "9FEB009E-80DE-48BB-9C0C-A3E8F9E9EBE1"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "525"
+                    }
+                ],
+                "name": "Tzss",
+                "partOf": {
+                    "reference": "Location/8ACF51CF-EB6D-44DB-AED5-75412408E791"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "D",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "district"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/86E88462-67B1-49F7-A4B2-3BED6D5FF1EF",
+            "resource": {
+                "resourceType": "Location",
+                "id": "86E88462-67B1-49F7-A4B2-3BED6D5FF1EF",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "86E88462-67B1-49F7-A4B2-3BED6D5FF1EF"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "FR"
+                    }
+                ],
+                "name": "Funding",
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "R",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "region"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/C0A9605F-A6D1-45A9-A852-0C0A17448E49",
+            "resource": {
+                "resourceType": "Location",
+                "id": "C0A9605F-A6D1-45A9-A852-0C0A17448E49",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "C0A9605F-A6D1-45A9-A852-0C0A17448E49"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "FD"
+                    }
+                ],
+                "name": "Funding",
+                "partOf": {
+                    "reference": "Location/86E88462-67B1-49F7-A4B2-3BED6D5FF1EF"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "D",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "district"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/C6D462F5-B701-4C76-BD69-F98C2932B4A0",
+            "resource": {
+                "resourceType": "Location",
+                "id": "C6D462F5-B701-4C76-BD69-F98C2932B4A0",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "C6D462F5-B701-4C76-BD69-F98C2932B4A0"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "FW"
+                    }
+                ],
+                "name": "Funding",
+                "partOf": {
+                    "reference": "Location/C0A9605F-A6D1-45A9-A852-0C0A17448E49"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "W",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "ward"
+                }
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/Location/81416223-CC39-4AE0-8C9F-99AA886B6AE1",
+            "resource": {
+                "resourceType": "Location",
+                "id": "81416223-CC39-4AE0-8C9F-99AA886B6AE1",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "81416223-CC39-4AE0-8C9F-99AA886B6AE1"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "LC",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "FV"
+                    }
+                ],
+                "name": "Funding",
+                "partOf": {
+                    "reference": "Location/C6D462F5-B701-4C76-BD69-F98C2932B4A0"
+                },
+                "physicalType": {
+                    "coding": [
+                        {
+                            "code": "V",
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type.html"
+                        }
+                    ],
+                    "text": "village"
+                }
+            }
+        }
+    ],
+    "type": "searchset"
+}

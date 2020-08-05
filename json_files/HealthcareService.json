@@ -1,0 +1,1178 @@
+{
+    "resourceType": "Bundle",
+    "entry": [
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/FABA2038-0E24-4557-B1BD-08584C48FA0D",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "H",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital"
+                    }
+                ],
+                "coverageArea": [
+                    {
+                        "reference": "Location/BEE392F1-07D8-482F-B601-6C8BBA0BF2A9"
+                    },
+                    {
+                        "reference": "Location/7D0E1238-F0DA-43D0-A0AF-FE3B344284CA"
+                    }
+                ],
+                "extraDetails": "Lantern Road 21\r\nP.O.Box 3425",
+                "id": "FABA2038-0E24-4557-B1BD-08584C48FA0D",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "FABA2038-0E24-4557-B1BD-08584C48FA0D"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "JMHOS001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/C341D6E0-6E86-4259-AEA4-6C90449B85EE"
+                    }
+                ],
+                "name": "Jambero District Hospital",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "B",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Both"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/50E9ABD9-A826-4071-BFED-F731F5FAFB55",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "H",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital"
+                    }
+                ],
+                "extraDetails": "Danchi Road 234\r\nP.O.Box 2715",
+                "id": "50E9ABD9-A826-4071-BFED-F731F5FAFB55",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "50E9ABD9-A826-4071-BFED-F731F5FAFB55"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "RAHOS001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                    }
+                ],
+                "name": "Rapta District Hospital",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "B",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Both"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/9D438CCA-F1DE-4951-AE50-F138AF49E98E",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "H",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital"
+                    }
+                ],
+                "extraDetails": "Abijan road 2512\r\nP.O.Box 9564",
+                "id": "9D438CCA-F1DE-4951-AE50-F138AF49E98E",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "9D438CCA-F1DE-4951-AE50-F138AF49E98E"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "UPHOS001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/21D6C3BC-532F-4532-AAAE-E915839B831C"
+                    }
+                ],
+                "name": "Uptol District Hospital",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "B",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Both"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/118536DA-B37A-40A3-838B-051B02570999",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "H",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital"
+                    }
+                ],
+                "extraDetails": "Calogri road 176\r\nP.O.Box 7453",
+                "id": "118536DA-B37A-40A3-838B-051B02570999",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "118536DA-B37A-40A3-838B-051B02570999"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "ROHOS001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/6931F346-9DCA-4380-ABF9-50D2FE0C63B7"
+                    }
+                ],
+                "name": "Rajo District Hospital",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "B",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Both"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/3AA74C50-4D9F-4372-96C7-9CDE4C3DA47E",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "H",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital"
+                    }
+                ],
+                "extraDetails": "Eolard road 78\r\nP.O.Box 3785",
+                "id": "3AA74C50-4D9F-4372-96C7-9CDE4C3DA47E",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "3AA74C50-4D9F-4372-96C7-9CDE4C3DA47E"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "VIHOS001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/BB694CB3-93F9-416F-82AE-95C135E700F9"
+                    }
+                ],
+                "name": "Vida District Hospital",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "B",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Both"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/C779C0A7-15F0-4954-AB32-2754242C8DEF",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "C",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital center"
+                    }
+                ],
+                "extraDetails": "Reduci road 42",
+                "id": "C779C0A7-15F0-4954-AB32-2754242C8DEF",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "C779C0A7-15F0-4954-AB32-2754242C8DEF"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "JMHC001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/C341D6E0-6E86-4259-AEA4-6C90449B85EE"
+                    }
+                ],
+                "name": "Jamini Health Centre",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Out-patient"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/2FE42298-F3A9-4428-8CC2-21398BA3D31C",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "C",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital center"
+                    }
+                ],
+                "extraDetails": "Tubi road 26",
+                "id": "2FE42298-F3A9-4428-8CC2-21398BA3D31C",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "2FE42298-F3A9-4428-8CC2-21398BA3D31C"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "RAHC001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                    }
+                ],
+                "name": "Zuja Health Centre",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Out-patient"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/9B1264E6-356A-449E-B16B-04501350DCBB",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "C",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital center"
+                    }
+                ],
+                "extraDetails": "Gufui road 84",
+                "id": "9B1264E6-356A-449E-B16B-04501350DCBB",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "9B1264E6-356A-449E-B16B-04501350DCBB"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "UPHC001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/21D6C3BC-532F-4532-AAAE-E915839B831C"
+                    }
+                ],
+                "name": "Tzah Health Centre",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Out-patient"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/98A5FED7-C96F-40FD-AB5A-2EB175F278F5",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "C",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital center"
+                    }
+                ],
+                "extraDetails": "Layout road 867",
+                "id": "98A5FED7-C96F-40FD-AB5A-2EB175F278F5",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "98A5FED7-C96F-40FD-AB5A-2EB175F278F5"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "ROHC001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/6931F346-9DCA-4380-ABF9-50D2FE0C63B7"
+                    }
+                ],
+                "name": "Fulhui Health Centre",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Out-patient"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/48EE95FC-D1AC-4C88-9754-1E78EBDB74F3",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "C",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital center"
+                    }
+                ],
+                "extraDetails": "Guazn Health Centre",
+                "id": "48EE95FC-D1AC-4C88-9754-1E78EBDB74F3",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "48EE95FC-D1AC-4C88-9754-1E78EBDB74F3"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "VIHC001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/BB694CB3-93F9-416F-82AE-95C135E700F9"
+                    }
+                ],
+                "name": "Juil\u00c3\u00b6a Health Centre",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Out-patient"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/69F8201B-3812-40C1-963C-0F330B9BBC7D",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "D",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Dispensary"
+                    }
+                ],
+                "extraDetails": "Jolywel road 675",
+                "id": "69F8201B-3812-40C1-963C-0F330B9BBC7D",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "69F8201B-3812-40C1-963C-0F330B9BBC7D"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "JMDP001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/C341D6E0-6E86-4259-AEA4-6C90449B85EE"
+                    }
+                ],
+                "name": "Huda Dispensary",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Out-patient"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/FC5B6596-AF51-4618-B763-84A1B53E8AC5",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "D",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Dispensary"
+                    }
+                ],
+                "extraDetails": "Lado road 756",
+                "id": "FC5B6596-AF51-4618-B763-84A1B53E8AC5",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "FC5B6596-AF51-4618-B763-84A1B53E8AC5"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "RADS002"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/356E8BB4-46C5-4431-8A4B-2DEA60A88282"
+                    }
+                ],
+                "name": "Kitua Dispensary",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Out-patient"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/3079B24E-69DA-4978-A667-F45921332686",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "D",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Dispensary"
+                    }
+                ],
+                "extraDetails": "Zuta road 862",
+                "id": "3079B24E-69DA-4978-A667-F45921332686",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "3079B24E-69DA-4978-A667-F45921332686"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "UPDS001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/21D6C3BC-532F-4532-AAAE-E915839B831C"
+                    }
+                ],
+                "name": "Loai Dispensary",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Out-patient"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/9A1E2EC7-A015-4589-8AFF-29B14885845B",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "D",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Dispensary"
+                    }
+                ],
+                "extraDetails": "Gunda road 723",
+                "id": "9A1E2EC7-A015-4589-8AFF-29B14885845B",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "9A1E2EC7-A015-4589-8AFF-29B14885845B"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "RADS001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/6931F346-9DCA-4380-ABF9-50D2FE0C63B7"
+                    }
+                ],
+                "name": "Yuahn Dispensary",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Out-patient"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/D61C869B-F184-4CAE-B61B-0AD52DDE2354",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "D",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Dispensary"
+                    }
+                ],
+                "extraDetails": "Uitly road 1",
+                "id": "D61C869B-F184-4CAE-B61B-0AD52DDE2354",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "D61C869B-F184-4CAE-B61B-0AD52DDE2354"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "VIDS001"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/BB694CB3-93F9-416F-82AE-95C135E700F9"
+                    }
+                ],
+                "name": "Viru Dispensary",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "G"
+                            }
+                        ],
+                        "text": "Government"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "O",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Out-patient"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8000/api_fhir_r4/HealthcareService/17FA6D4A-4708-40BE-8167-BB4C82F1C7E4",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "H",
+                                "system": "http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html"
+                            }
+                        ],
+                        "text": "Hospital"
+                    }
+                ],
+                "extraDetails": "Test address",
+                "id": "17FA6D4A-4708-40BE-8167-BB4C82F1C7E4",
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UUID",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "17FA6D4A-4708-40BE-8167-BB4C82F1C7E4"
+                    },
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "FI",
+                                    "system": "https://hl7.org/fhir/valueset-identifier-type.html"
+                                }
+                            ]
+                        },
+                        "use": "usual",
+                        "value": "PR 1"
+                    }
+                ],
+                "location": [
+                    {
+                        "reference": "Location/C341D6E0-6E86-4259-AEA4-6C90449B85EE"
+                    }
+                ],
+                "name": "Mother Teresa Hospital",
+                "program": [
+                    {
+                        "coding": [
+                            {
+                                "code": "P"
+                            }
+                        ],
+                        "text": "Private organization"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "651616"
+                    },
+                    {
+                        "system": "email",
+                        "use": "home",
+                        "value": "abc@abc.com"
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "B",
+                                "system": "http://hl7.org/fhir/valueset-service-type.html"
+                            }
+                        ],
+                        "text": "Both"
+                    }
+                ]
+            }
+        }
+    ],
+    "type": "searchset"
+}
