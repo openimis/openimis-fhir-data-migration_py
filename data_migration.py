@@ -518,7 +518,15 @@ class Database:
                     insurer VARCHAR(255) NOT NULL, 
                     patient VARCHAR(255) NOT NULL, 
                     communication_request VARCHAR(255),
-                    request VARCHAR(255) );""")
+                    request VARCHAR(255),
+                    requestor VARCHAR(255),
+                    billable_period_start DATE,
+                    billable_period_end DATE, 
+                    icd_0 VARCHAR(255),
+                    icd_1 VARCHAR(255),
+                    icd_2 VARCHAR(255),
+                    icd_3 VARCHAR(255),
+                    icd_4 VARCHAR(255) );""")
 
         cursor.execute(query)
         connection.commit()
@@ -533,8 +541,9 @@ class Database:
                 continue
 
             insert = ("""INSERT INTO Claim_Response (claim_response_id, identifier, created, outcome, type, status, use,
-                         insurer, patient, communication_request, request) 
-                         VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""")
+                         insurer, patient, communication_request, request, requestor, billable_period_start, 
+                         billable_period_end, icd_0, icd_1, icd_2, icd_3, icd_4) 
+                         VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""")
 
             id = id + 1
             identifier = claim_response.id
@@ -547,13 +556,40 @@ class Database:
             patient = claim_response.patient.reference
             comm_req = None
             request = None
+            requestor = None
+            bill_period_start = None
+            bill_period_end = None
+            icd0 = None
+            icd1 = None
+            icd2 = None
+            icd3 = None
+            icd4 = None
 
             if claim_response.communicationRequest is not None:
                 comm_req = claim_response.communicationRequest[0].reference
             if claim_response.request is not None:
                 request = claim_response.request.reference
+            if claim_response.requestor is not None:
+                requestor = claim_response.requestor.reference
+            if claim_response.extension is not None:
+                if diag0 := [x for x in claim_response.extension if x.url == "icd_0"]:
+                    icd0 = diag0[0].valueReference.reference
+                if diag1 := [x for x in claim_response.extension if x.url == "icd_1"]:
+                    icd1 = diag1[0].valueReference.reference
+                if diag2 := [x for x in claim_response.extension if x.url == "icd_2"]:
+                    icd2 = diag2[0].valueReference.reference
+                if diag3 := [x for x in claim_response.extension if x.url == "icd_3"]:
+                    icd3 = diag3[0].valueReference.reference
+                if diag4 := [x for x in claim_response.extension if x.url == "icd_4"]:
+                    icd4 = diag4[0].valueReference.reference
+                if billP := [x for x in claim_response.extension if x.url == "billablePeriod"]:
+                    if billP[0].valuePeriod.start is not None:
+                        bill_period_start = billP[0].valuePeriod.start.date
+                    if billP[0].valuePeriod.end is not None:
+                        bill_period_end = billP[0].valuePeriod.end.date
 
-            data_to_insert = (id, identifier, created, outcome, type, status, use, insurer, patient, comm_req, request)
+            data_to_insert = (id, identifier, created, outcome, type, status, use, insurer, patient, comm_req, request,
+                              requestor, bill_period_start, bill_period_end, icd0, icd1, icd2, icd3, icd4)
             cursor.execute(insert, data_to_insert)
             connection.commit()
 
